@@ -19,6 +19,7 @@ import com.springrest.springrest.entity.Course;
 import com.springrest.springrest.service.CourseService;
 
 @RestController
+@CrossOrigin("*")
 public class MyController {
 
 	@Autowired
