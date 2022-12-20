@@ -59,10 +59,10 @@ public class MyController {
 		return this.courseService.addCourse(course);
 	}
 	
-	@PutMapping("/courses")
-	public Course updateCourse(@RequestBody Course course)
+	@PutMapping("/courses/{Id}")
+	public Course updateCourse(@RequestBody Course course, @PathVariable("Id") int Id)
 	{
-		return this.courseService.updateCourse(course);
+		return this.courseService.updateCourse(course,Id);
 	}
 	
 	@DeleteMapping("/courses/{courseId}")

@@ -51,7 +51,7 @@ public class CourseServiceImpl implements CourseService{
 	}
 
 	@Override
-	public Course updateCourse(Course course) {
+	public Course updateCourse(Course course, int Id) {
 //		list.forEach(e ->{
 //			if(e.getId()==course.getId()) {
 //				e.setTitle(course.getTitle());
